@@ -7,7 +7,6 @@ project(jm_debug
         VERSION 0.0.0.0
         DESCRIPTION "Journeyman's debugging library."
 )
-option(JM_DEBUG_BUILD_DOCUMENTATION "Build the documentation using Doxygen." ON)
 option(JM_DEBUG_BUILD_EXAMPLE "Build the jm_debug example project." ON)
 option(JM_DEBUG_AUTO_FETCH "Fetch the dependencies of jm_debug automatically using FetchContent if the targets don't already exist." ON)
 add_library(${PROJECT_NAME} STATIC "")
