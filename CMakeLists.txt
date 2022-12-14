@@ -21,7 +21,7 @@
 
 cmake_minimum_required(VERSION 3.24.1)
 project(jm_debug
-        VERSION 0.0.0.0
+        VERSION 1.0.0.0
         DESCRIPTION "Journeyman's debugging library."
 )
 option(JM_DEBUG_BUILD_EXAMPLE "Build the jm_debug example project." ON)
