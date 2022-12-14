@@ -16,14 +16,14 @@ target_include_directories(${PROJECT_NAME}
         PUBLIC
                 "${CMAKE_CURRENT_SOURCE_DIR}/include/"
 )
-if (NOT TARGET fmt::fmt)
-        if (JM_DEBUG_AUTO_FETCH)
+if(NOT TARGET fmt::fmt)
+        if(JM_DEBUG_AUTO_FETCH)
                 message(STATUS "fmt::fmt is required link library of jm_debug and was not found. Fetching with FetchContent.")
                 Include(FetchContent)
                 FetchContent_Declare(
-                fmt
-                GIT_REPOSITORY https://github.com/fmtlib/fmt
-                GIT_TAG        9.1.0
+                        fmt
+                        GIT_REPOSITORY https://github.com/fmtlib/fmt
+                        GIT_TAG        9.1.0
                 )
                 set(FMT_DOC OFF)
                 set(FMT_INSTALL OFF)
@@ -38,13 +38,13 @@ if (NOT TARGET fmt::fmt)
                 message(SEND_ERROR "fmt::fmt is required link library of jm_debug and was not found.")
         endif()
 endif()
-if (NOT TARGET magic_enum::magic_enum)
-        if (JM_DEBUG_AUTO_FETCH)
+if(NOT TARGET magic_enum::magic_enum)
+        if(JM_DEBUG_AUTO_FETCH)
                 message(STATUS "magic_enum::magic_enum is required link library of jm_debug and was not found. Fetching with FetchContent.")
                 FetchContent_Declare(
-                magic_enum
-                GIT_REPOSITORY https://github.com/Neargye/magic_enum
-                GIT_TAG        v0.8.1
+                        magic_enum
+                        GIT_REPOSITORY https://github.com/Neargye/magic_enum
+                        GIT_TAG        v0.8.1
                 )
                 set(MAGIC_ENUM_OPT_ENABLE_NONASCII OFF)
                 set(MAGIC_ENUM_OPT_BUILD_EXAMPLES OFF)
