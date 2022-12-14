@@ -8,7 +8,7 @@
 #include <string>
 #include <functional>
 #include <fmt/format.h>
-#include <jm/enum_class_formater.hpp>
+#include <jm/enum_class_formatter.hpp>
 
 namespace jm
 {

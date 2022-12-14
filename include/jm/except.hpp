@@ -7,7 +7,7 @@
 
 #include <fmt/format.h>
 #include <stdexcept>
-#include <jm/enum_class_formater.hpp>
+#include <jm/enum_class_formatter.hpp>
 
 namespace jm
 {

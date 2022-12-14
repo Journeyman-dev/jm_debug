@@ -2,8 +2,8 @@
 //
 // SPDX-License-Identifier: MIT
 
-#ifndef JM_ENUM_CLASS_FORMAT_HPP
-#define JM_ENUM_CLASS_FORMAT_HPP
+#ifndef JM_ENUM_CLASS_FORMATTER_HPP
+#define JM_ENUM_CLASS_FORMATTER_HPP
 
 #include <fmt/format.h>
 #include <magic_enum.hpp>

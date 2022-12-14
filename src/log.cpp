@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: MIT
 
 #include <jm/log.hpp>
-#include <jm/enum_class_formater.hpp>
+#include <jm/enum_class_formatter.hpp>
 #include <string>
 #include <optional>
 #include <functional>
