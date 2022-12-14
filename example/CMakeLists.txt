@@ -20,6 +20,7 @@
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 add_executable(jm_debug_example "")
+add_executable(jm::debug_example ALIAS jm_debug_example)
 add_subdirectory(src)
 target_link_libraries(jm_debug_example
     PUBLIC
